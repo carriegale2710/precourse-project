@@ -1,0 +1,22 @@
+
+// Replicate the wireframe so that it looks good on your device, you will need to choose appropriate sizes for:
+// o Font
+// o Images
+// o Margin
+// o Padding
+
+//o Style your page with SCSS. Use variables, partials, modules, mixins, any other features of SCSS you think will be useful
+// o The layout should be created using flexbox 
+
+
+
+// sections:
+@import "./nav";
+@import "./header";
+@import "./menu";
+@import "./reviews";
+
+//design system:
+@import "./colors";
+@import "./fonts";
+@import "./icons";
