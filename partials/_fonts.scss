@@ -3,13 +3,32 @@
 
 // sourced from https://fonts.google.com/selection/embed
 
-.open-sans-<uniquifier> { // <uniquifier>: Use a unique and descriptive class nam
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>; // <weight>: Use a value from 300 to 800
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+.open-sans { 
+    &__regular {
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      // font-weight: ; // <weight>: Use a value from 300 to 800
+      font-style: normal;
+      font-variation-settings:
+      "wdth" 100;
+    }
+    &__bold {
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500; // <weight>: Use a value from 300 to 800
+      font-style: normal;
+      font-variation-settings:
+      "wdth" 100;
+        
+    }
+    &__bold-italic {
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      // font-weight: <weight>; // <weight>: Use a value from 300 to 800
+      font-style: italic;
+      font-variation-settings:
+      "wdth" 100;
+    }
 }
 
 .rammetto-one-regular {
