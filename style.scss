@@ -9,18 +9,16 @@
 // o The layout should be created using flexbox 
 
 
+//partials:
+@use 'partials/colors';
+// @use 'fonts'; MISTAKE, need to include the folder name
+@use 'partials/fonts';
+@use 'partials/icons';
 
-// sections:
-@import "./nav";
-@import "./header";
-@import "./menu";
-@import "./reviews";
-
-//design system:
-@import "./colors";
-@import "./fonts";
-@import "./icons";
-
+// this is an OUTDATED way to do this, don't do it as its global
+// @import "./colors";
+// @import "./fonts";
+// @import "./icons";
 
 
 
