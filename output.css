@@ -1,12 +1,7 @@
-.rammetto-one-regular {
-  font-family: "Rammetto One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .open-sans__regular {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
+  font-weight: 300;
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
@@ -27,6 +22,43 @@
 #logo {
   height: 50px;
   width: 50px;
+}
+
+h1 {
+  font-family: "Rammetto One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+nav {
+  border: 1px solid red;
+}
+header {
+  background-color: #689572;
+}
+
+menu h1 {
+  font-family: "Rammetto One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FAA196;
+}
+
+.reviews {
+  background-color: #FAA196;
+}
+
+footer {
+  background-color: #82A289;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100;
+  gap: 10px;
+}
+footer :last-child {
+  justify-self: right;
 }
 
 /*# sourceMappingURL=output.css.map */
