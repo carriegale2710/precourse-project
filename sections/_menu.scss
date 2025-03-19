@@ -1,5 +1,7 @@
 @use '../partials/mixins';
 @use '../partials/colors';
+@use '../partials/fonts';
+
 
 
 ///////////////////////////// 3. MENU-SECTION /////////////////////////////////
@@ -8,7 +10,8 @@ menu{
     @include mixins.section-style;
     padding: 5%;
     flex-direction: column;
-    height: 500px;
+    height: auto;
+    gap: 10px;
     h1{
         color: colors.$bubble-pink;
     }
@@ -19,3 +22,10 @@ menu{
     
 }
 
+
+details{
+    background-color: colors.$dusty-rose;
+    width: 100%;
+    padding: 2vw;
+    
+}

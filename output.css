@@ -157,13 +157,20 @@ menu {
   font-size: small;
   padding: 5%;
   flex-direction: column;
-  height: 500px;
+  height: auto;
+  gap: 10px;
 }
 menu h1 {
   color: #FAA196;
 }
 menu i {
   color: #689572;
+}
+
+details {
+  background-color: #EBC9C4;
+  width: 100%;
+  padding: 2vw;
 }
 
 footer {
