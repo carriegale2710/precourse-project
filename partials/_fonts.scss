@@ -28,17 +28,19 @@
 .open-sans { 
   
   &__regular {
-    @include mixins.openSans($bold:lighter, $font-style:normal);
+    @include mixins.openSans($bold:lighter);
     // font-weight: 300; // <weight>: Use a value from 300 to 800
   }
     
   &__bold {
-    @include mixins.openSans($bold:700, $font-style:normal);
+    @include mixins.openSans($bold:700);
     // font-weight: 500; // <weight>: Use a value from 300 to 800
   }
 
-  &__bold-italic {
+  &__bold--italic {
     @include mixins.openSans($bold:700, $font-style:italic);
+    font-size:60%;
+    text-align: center;
     // font-weight: 500; // font-weight: <weight>; // <weight>: Use a value from 300 to 800
   }
 }

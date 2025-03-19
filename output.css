@@ -22,13 +22,15 @@
   font-variation-settings: "wdth" 100;
   margin: 0;
 }
-.open-sans__bold-italic {
+.open-sans__bold--italic {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
-  font-style: normal;
+  font-style: italic;
   font-variation-settings: "wdth" 100;
   margin: 0;
+  font-size: 60%;
+  text-align: center;
 }
 
 #logo {
@@ -83,16 +85,36 @@ header #header-right img {
   margin: 0;
   font-size: small;
   background-color: #FAA196;
-  padding: 5%;
+  padding: 2% 5% 2% 5%;
   color: white;
-  height: 500px;
+  height: auto;
   font-size: large;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.review-section h1 {
+  height: 50px;
+  width: 85vw;
+  text-align: center;
 }
 .review-section__reviewCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 2px solid white;
-  height: 100px;
-  width: 300px;
+  height: 110px;
+  width: 40vw;
   color: #404040;
+  padding: 2%;
+  margin: 5px;
+  gap: 2%;
+}
+.review-section__reviewCard__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 4%;
 }
 
 nav {

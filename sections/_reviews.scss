@@ -4,16 +4,38 @@
 ///////////////////////////// 4. REVIEW-SECTION /////////////////////////////////
 
 .review-section {
+    h1{
+        height: 50px;
+        width: 85vw;
+        text-align: center
+    }
     @include mixins.section-style;
     background-color: colors.$bubble-pink;
-    padding: 5%;
+    padding: 2% 5% 2% 5%;
     color: white;
-    height: 500px;
+    height: auto;
     font-size: large;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    
     &__reviewCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         border: 2px solid white;
-        height: 100px;
-        width: 300px;
+        height: 110px;
+        width: 40vw;
         color: colors.$dark-choc;
+        padding: 2%;
+        margin: 5px;
+        gap: 2%;
+        &__wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 4%;
+        }
     }
 }
+
