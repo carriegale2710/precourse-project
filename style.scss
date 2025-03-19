@@ -21,6 +21,10 @@
 // @import "./fonts";
 // @import "./icons";
 
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -29,6 +33,9 @@ body{
     margin: 0;
 }
 
+i {
+    padding: 0px;
+}
 ///////////////////////////// 1. NAVBAR-SECTION /////////////////////////////////
 
 
@@ -46,7 +53,6 @@ nav {
    flex-direction: row;
    align-items: center;
    i{
-    padding: 8px;
     transform: rotateY(180deg);
    }
 }
@@ -123,6 +129,7 @@ menu{
     @include mixins.section-style;
     padding: 5%;
     flex-direction: column;
+    height: 500px;
     h1{
         color: colors.$bubble-pink;
     }
@@ -132,11 +139,13 @@ menu{
 
 ///////////////////////////// 4. REVIEW-SECTION /////////////////////////////////
 
-.reviews {
+#reviews {
     @include mixins.section-style;
     background-color: colors.$bubble-pink;
     padding: 5%;
     color: white;
+    height: 500px;
+
 }
 
 ///////////////////////////// 5. FOOTER-SECTION /////////////////////////////////
