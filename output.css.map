@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["partials/_fonts.scss","partials/_icons.scss","style.scss"],"names":[],"mappings":"AAMI;EACE;EACA;EAEA;EACA,yBACA;;AAEF;EACE;EACA;EACA;EACA;EACA,yBACA;;AAGF;EACE;EACA;EAEA;EACA,yBACA;;;AAIN;EACE;EACA;EACA;;;ACnCF;EACI;EACA;;;ACgBJ;EACI","file":"output.css"}
+=======
+{"version":3,"sourceRoot":"","sources":["partials/_fonts.scss","partials/_icons.scss","style.scss","partials/_colors.scss"],"names":[],"mappings":"AAqBI;EACE;EACA;EACA;EACA;EACA,yBACA;;AAEF;EACE;EACA;EACA;EACA;EACA,yBACA;;AAGF;EACE;EACA;EAEA;EACA,yBACA;;;AC3CN;EACI;EACA;;;ACoBJ;EFTE;EACA;EACA;EACA,OEQsC;;;AAOxC;EACI;;AAQJ;EACI,kBCtCS;;;AD4CT;EFlCF;EACA;EACA;EACA,OGhBY;;;ADqDd;EACI,kBCtDU;;;AD2Dd;EACI,kBCxDS;EDyDT;EACA;EACA;EACA;EACA;;AACA;EACI","file":"output.css"}
+>>>>>>> no-overwhelm
