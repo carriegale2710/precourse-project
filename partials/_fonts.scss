@@ -23,7 +23,15 @@
 
 // nesting with ampersand --> https://css-tricks.com/the-sass-ampersand/
 
-
+@mixin openSans($bold:bold, $font-style:normal) {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $bold;
+  font-style: normal;
+  font-variation-settings:
+      "wdth" 100;
+  margin: 0;
+}
 
 .open-sans { 
   
