@@ -45,8 +45,38 @@ nav {
   padding: 0;
   margin: 0;
   flex-direction: row;
-  justify-content: left;
+  justify-content: space-between;
   padding: 10px 5% 10px 5%;
+}
+
+.div-left {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.div-left i {
+  padding: 8px;
+}
+
+.div-right {
+  border: 1px solid green;
+}
+
+a {
+  text-decoration: none;
+  color: #404040;
+}
+
+h2 {
+  color: white;
+}
+
+button {
+  color: white;
+  background-color: #689572;
+  border: 2px solid white;
+  padding: 5px 10px 5px 10px;
 }
 
 header {
@@ -113,12 +143,11 @@ footer {
   margin: 0;
   background-color: #82A289;
   flex-direction: row;
-  flex-wrap: wrap;
   width: 100;
   gap: 10px;
   padding-left: 5%;
   padding-right: 5%;
-  justify-content: left;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=output.css.map */
