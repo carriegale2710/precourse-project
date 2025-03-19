@@ -21,6 +21,10 @@
 // @import "./fonts";
 // @import "./icons";
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
 }
@@ -32,7 +36,8 @@ nav {
     @include mixins.section-style;
     flex-direction: row;
     justify-content:space-between;
-    padding: 10px 5% 10px 5%;   
+    padding: 8px 12% 8px 8%;
+    
 }
 
 .div-left {
@@ -42,22 +47,32 @@ nav {
    align-items: center;
    i{
     padding: 8px;
+    transform: rotateY(180deg);
    }
 }
 
 .div-right {
     border: 1px solid green;
-    
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 
 
 a {
     text-decoration: none;
     color: colors.$dark-choc;
+    font-size:x-small;
+    
 }
 
 h2 {
     color: white;
+    font-size: small;
+}
+
+p{
+    font-size: x-small;
 }
 
 button{
@@ -73,21 +88,31 @@ header {
     @include mixins.section-style;
     flex-direction: row;
     background-color: colors.$leaf-green;
-    height: 50vh;
+    height: 350px;
+    
     #header-left{
-        width: 50%;
-        height: auto;
+        width: 50vw;
+        height:fit-content;
         border: 1px solid blue;
-        padding: 5%;
-        // text-wrap: wrap;
+        padding: 0 8% 0 8%;
+        box-sizing: border-box; // this keeps it so  Padding will not increase the width
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        color: white;
     }
     #header-right {
-        width: 50%;
-        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box; // this keeps it so  Padding will not increase the width
+        width: 50vw;
+        height: 100%;
         // border: 1px solid blue;
         img{
-            height:50vh;
-            width: 50vw;
+            height:100%;
+            width: 100%;
+            object-fit: cover;
         }
     }
 }
@@ -111,6 +136,7 @@ menu{
     @include mixins.section-style;
     background-color: colors.$bubble-pink;
     padding: 5%;
+    color: white;
 }
 
 ///////////////////////////// 5. FOOTER-SECTION /////////////////////////////////
@@ -121,12 +147,10 @@ footer {
     flex-direction: row;
     width: 100;
     gap: 10px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 10px 12% 10px 5%;
     justify-content:space-between;
-    // &:last-child {
-    //     justify-self: right;
-    // }
-    
+    i {
+        transform: rotateY(180deg);
+    }
     
 } 

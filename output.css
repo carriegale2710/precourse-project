@@ -2,7 +2,8 @@
   font-family: "Rammetto One", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: white;
+  margin: 0;
+  margin-block-end: 0;
 }
 
 .open-sans__regular {
@@ -11,25 +12,32 @@
   font-weight: lighter;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  margin: 0;
 }
 .open-sans__bold {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  margin: 0;
 }
 .open-sans__bold-italic {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  margin: 0;
 }
 
 #logo {
   height: 50px;
   width: 50px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -38,15 +46,17 @@ body {
 
 nav {
   border: 1px solid red;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0;
   margin: 0;
+  font-size: small;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px 5% 10px 5%;
+  padding: 8px 12% 8px 8%;
 }
 
 .div-left {
@@ -57,19 +67,29 @@ nav {
 }
 .div-left i {
   padding: 8px;
+  transform: rotateY(180deg);
 }
 
 .div-right {
   border: 1px solid green;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
 a {
   text-decoration: none;
   color: #404040;
+  font-size: x-small;
 }
 
 h2 {
   color: white;
+  font-size: small;
+}
+
+p {
+  font-size: x-small;
 }
 
 button {
@@ -81,39 +101,53 @@ button {
 
 header {
   border: 1px solid red;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0;
   margin: 0;
+  font-size: small;
   flex-direction: row;
   background-color: #689572;
-  height: 50vh;
+  height: 350px;
 }
 header #header-left {
-  width: 50%;
-  height: auto;
+  width: 50vw;
+  height: fit-content;
   border: 1px solid blue;
-  padding: 5%;
+  padding: 0 8% 0 8%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
 }
 header #header-right {
-  width: 50%;
-  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 50vw;
+  height: 100%;
 }
 header #header-right img {
-  height: 50vh;
-  width: 50vw;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 menu {
   border: 1px solid red;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0;
   margin: 0;
+  font-size: small;
   padding: 5%;
   flex-direction: column;
 }
@@ -123,31 +157,38 @@ menu h1 {
 
 .reviews {
   border: 1px solid red;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0;
   margin: 0;
+  font-size: small;
   background-color: #FAA196;
   padding: 5%;
+  color: white;
 }
 
 footer {
   border: 1px solid red;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0;
   margin: 0;
+  font-size: small;
   background-color: #82A289;
   flex-direction: row;
   width: 100;
   gap: 10px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 10px 12% 10px 5%;
   justify-content: space-between;
+}
+footer i {
+  transform: rotateY(180deg);
 }
 
 /*# sourceMappingURL=output.css.map */

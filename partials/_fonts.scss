@@ -15,7 +15,9 @@
   font-family: "Rammetto One", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: white;
+  // color: white;
+  margin: 0;
+  margin-block-end: 0;
 }
 
 
@@ -31,12 +33,12 @@
   }
     
   &__bold {
-    @include mixins.openSans($bold:bold, $font-style:normal);
+    @include mixins.openSans($bold:700, $font-style:normal);
     // font-weight: 500; // <weight>: Use a value from 300 to 800
   }
 
   &__bold-italic {
-    @include mixins.openSans($bold:bold, $font-style:italic);
+    @include mixins.openSans($bold:700, $font-style:italic);
     // font-weight: 500; // font-weight: <weight>; // <weight>: Use a value from 300 to 800
   }
 }
