@@ -37,7 +37,7 @@
 }
 
 header {
-  border: 5px solid red;
+  border: 1px solid red;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -74,7 +74,7 @@ header #header-right img {
 }
 
 .review-section {
-  border: 5px solid red;
+  border: 1px solid red;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -96,7 +96,7 @@ header #header-right img {
 }
 
 nav {
-  border: 5px solid red;
+  border: 1px solid red;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -151,7 +151,7 @@ button {
 }
 
 menu {
-  border: 5px solid red;
+  border: 1px solid red;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -181,9 +181,20 @@ menu img {
 menu p {
   font-size: xxx-small;
 }
-menu__list {
+
+details {
+  width: 100%;
+  padding: 2vw;
+}
+
+summary {
+  background-color: #EBC9C4;
+  padding: 1% 2% 1% 2%;
+}
+
+.menu__list {
   /* Flex container should be 900px wide, 300px tall */
-  border: 5px solid red;
+  border: 1px solid red;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -196,10 +207,11 @@ menu__list {
   flex-direction: row;
   flex-wrap: wrap;
   height: auto;
+  background-color: white;
 }
-menu__list__item {
+.menu__list__item {
   /* Use percentages for the height and width of the card */
-  border: 5px solid red;
+  border: 1px solid red;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -213,22 +225,14 @@ menu__list__item {
   align-items: center;
   justify-content: center;
 }
-menu__list__item__dietary {
+.menu__list__item__dietary {
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding: 30%;
-  justify-self: center;
-}
-
-details {
-  background-color: #EBC9C4;
-  width: 100%;
-  padding: 2vw;
 }
 
 footer {
-  border: 5px solid red;
+  border: 1px solid red;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;

@@ -35,9 +35,24 @@ menu{
     
     p {
         font-size: xxx-small;
-    }
+    }  
+}
+
+
+details{
+    // 
+    width: 100%;
+    padding: 2vw;
     
     
+}
+
+summary{
+    background-color: colors.$dusty-rose;
+    padding: 1% 2% 1% 2%;
+}
+
+.menu {
     &__list {
         /* Flex container should be 900px wide, 300px tall */
         @include mixins.section-style;
@@ -46,6 +61,7 @@ menu{
         flex-direction: row;
         flex-wrap: wrap;
         height: auto;
+        background-color: white;
 
         &__item {
             /* Use percentages for the height and width of the card */
@@ -53,6 +69,7 @@ menu{
             @include mixins.section-style;
             display: flex;
             flex-direction: column;
+            
             width: 33.333%;
             align-items: center;
             justify-content: center;
@@ -60,25 +77,12 @@ menu{
 
             &__dietary {
                 display: flex;
+
                 flex-direction: row;
                 width: 100%;
-                padding: 30%;
-                justify-self: center;
-
+                // padding: 30%;
+                // justify-self: center
             }
-           
         }
     }
-
-    
-
 }
-
-
-details{
-    background-color: colors.$dusty-rose;
-    width: 100%;
-    padding: 2vw;
-    
-}
-
