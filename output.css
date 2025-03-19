@@ -151,7 +151,12 @@ nav {
   font-size: small;
   flex-direction: row;
   justify-content: space-between;
-  padding: 8px 12% 8px 8%;
+  padding: 8px 8% 8px 8%;
+}
+nav a {
+  text-decoration: none;
+  color: #404040;
+  font-size: x-small;
 }
 nav a {
   text-decoration: none;
@@ -171,6 +176,32 @@ nav a {
   gap: 30px;
 }
 
+a {
+  text-decoration: none;
+  color: #404040;
+  font-size: x-small;
+}
+
+h2 {
+  color: white;
+  font-size: small;
+}
+
+p {
+  font-size: x-small;
+}
+
+button {
+  color: white;
+  background-color: #689572;
+  border: 2px solid white;
+  padding: 5px 10px 5px 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 menu {
   border: 1px solid red;
   box-sizing: border-box;
@@ -182,13 +213,73 @@ menu {
   font-size: small;
   padding: 5%;
   flex-direction: column;
-  height: 500px;
+  height: auto;
+  gap: 10px;
 }
 menu h1 {
   color: #FAA196;
 }
+menu h2 {
+  color: #404040;
+  font-size: x-small;
+}
 menu i {
   color: #689572;
+}
+
+details {
+  width: 100%;
+  padding: 2vw;
+}
+
+summary {
+  background-color: #EBC9C4;
+  padding: 1% 2% 1% 2%;
+}
+
+i {
+  scale: 80%;
+}
+
+p {
+  font-size: 40%;
+}
+
+.menu__list {
+  /* Flex container should be 900px wide, 300px tall */
+  justify-self: center; /*Flex container should be centered on the page */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  background-color: white;
+  gap: 2%;
+}
+.menu__list__item {
+  /* Use percentages for the height and width of the card */
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  height: fit-content;
+  margin-top: 2%;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  background-color: #EBC9C4;
+}
+.menu__list__item img {
+  height: fit-content;
+  width: 100%;
+  object-fit: cover;
+  margin: 3px;
+}
+.menu__list__item__dietary {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
 }
 
 footer {

@@ -1,6 +1,10 @@
 @use '../partials/mixins';
 @use '../partials/colors';
+@use '../partials/fonts';
 
+*{
+    box-sizing: border-box;
+}
 
 ///////////////////////////// 3. MENU-SECTION /////////////////////////////////
 
@@ -10,13 +14,94 @@ menu{
     flex-direction: column;
     height: 500px;
     
+    height: auto;
+    gap: 10px;
+
     h1{
         color: colors.$bubble-pink;
+    }
+
+    h2 {
+        color: colors.$dark-choc;
+        font-size: x-small;
     }
     
     i{
         color: colors.$leaf-green;
     }
+
     
+    
+//     
+}
+
+
+details{
+    // 
+    width: 100%;
+    padding: 2vw;
+    
+    
+}
+
+summary{
+    background-color: colors.$dusty-rose;
+    padding: 1% 2% 1% 2%;
+}
+
+i {
+    scale: 80%;
+}
+p {
+    font-size: 40%;
+}  
+
+.menu {
+    &__list {
+        /* Flex container should be 900px wide, 300px tall */
+        // @include mixins.section-style;
+        
+        justify-self: center; /*Flex container should be centered on the page */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        background-color: white;
+        gap: 2%;
+
+        &__item {
+            /* Use percentages for the height and width of the card */
+            // height: 100%;
+            // @include mixins.section-style;
+            display: flex;
+            flex-direction: column;
+            
+            width: 32%;
+            height: fit-content;
+            margin-top: 2%;
+            align-items: center;
+            justify-content: center;
+            
+            padding: 1%;
+            background-color: colors.$dusty-rose;
+
+            img{
+                height: fit-content;
+                width: 100%;
+                object-fit: cover;
+                margin: 3px;
+            }
+
+            &__dietary {
+                display: flex;
+                flex-direction: row;
+                
+                gap: 1%;
+                align-items: center;
+                justify-content: center;
+                padding: 1%;
+            }
+        }
+    }
 }
 
