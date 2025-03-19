@@ -14,6 +14,7 @@
 // @use 'fonts'; MISTAKE, need to include the folder name
 @use 'partials/fonts';
 @use 'partials/icons';
+@use 'partials/mixins';
 
 // this is an OUTDATED way to do this, don't do it as its global
 // @import "./colors";
@@ -27,10 +28,11 @@ h1 {
 }
 
 .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
+    @include mixins.section-style;
+    flex-direction: row;
+    border: 1px dashed blue;
+    width: 80vw;
+    height:fit-content;
 }
 
 
@@ -38,12 +40,9 @@ h1 {
 
 
 nav {
-    border: 1px solid red;
-    padding-left: 50px;
-    display: flex;
+    @include mixins.section-style;
     flex-direction: row;
-    align-items: center;
-    justify-content:last baseline;
+    padding-left: 50px;
     a {
         @include fonts.open-sans;
     }
@@ -52,45 +51,33 @@ nav {
 ///////////////////////////// 2. HEADER-SECTION /////////////////////////////////
 
 header {
-    border: 1px solid red;
+    @include mixins.section-style;
+    flex-direction: row;
     background-color: colors.$leaf-green;
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
-    justify-content: center;
+    
 }
 
 ///////////////////////////// 3. MENU-SECTION /////////////////////////////////
 
 menu{
-    border: 1px solid red;
+    @include mixins.section-style;
     h1{@include fonts.rammetto-one-regular(colors.$bubble-pink)};
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 
 ///////////////////////////// 4. REVIEW-SECTION /////////////////////////////////
 
 .reviews {
-    border: 1px solid red;
+    @include mixins.section-style;
     background-color: colors.$bubble-pink;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 ///////////////////////////// 5. FOOTER-SECTION /////////////////////////////////
 
 footer {
+    @include mixins.section-style;
     background-color: colors.$pale-green;
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     width: 100;
     gap: 10px;
     :last-child {

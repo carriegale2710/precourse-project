@@ -11,19 +11,25 @@ h1 {
 }
 
 .content-wrapper {
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px dashed blue;
+  width: 80vw;
+  height: fit-content;
 }
 
 nav {
   border: 1px solid red;
-  padding-left: 50px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: last baseline;
+  justify-content: center;
+  flex-direction: row;
+  padding-left: 50px;
 }
 nav a {
   font-family: "Open Sans", sans-serif;
@@ -45,10 +51,12 @@ nav a__bold-italic {
 
 header {
   border: 1px solid red;
-  background-color: #689572;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  flex-direction: row;
+  background-color: #689572;
 }
 
 menu {
@@ -67,19 +75,21 @@ menu h1 {
 
 .reviews {
   border: 1px solid red;
-  background-color: #FAA196;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #FAA196;
 }
 
 footer {
-  background-color: #82A289;
+  border: 1px solid red;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #82A289;
+  flex-direction: row;
   width: 100;
   gap: 10px;
 }
