@@ -9,24 +9,17 @@
 // o The layout should be created using flexbox 
 
 
-
-// sections:
-@import "./nav";
-@import "./header";
-@import "./menu";
-@import "./reviews";
-
 //design system:
-@import "./colors";
-@import "./fonts";
-@import "./icons";
-
-
+@use "partials/colors";
+@use "partials/fonts";
+@use "partials/icons";
 
 
 ///////////////////////////// 1. NAVBAR-SECTION /////////////////////////////////
 
-
+.fa-mug-hot{
+    transform: rotateY(180deg); // flips coffee mug icon from right to left
+}
 
 ///////////////////////////// 2. HEADER-SECTION /////////////////////////////////
 

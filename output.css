@@ -1,31 +1,36 @@
+.open-sans__regular {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.open-sans__bold {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.open-sans__bold-italic {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+  font-variation-settings: "wdth" 100;
+}
+
 .rammetto-one-regular {
   font-family: "Rammetto One", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #689572;
-}
-
-.open-sans-bold {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
-  font-variation-settings: "width" 100;
-  color: #404040;
-}
-
-.open-sans-regular {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: regular;
-  font-style: normal;
-  font-variation-settings: "width" 100;
-  color: #404040;
 }
 
 #logo {
   height: 50px;
   width: 50px;
+}
+
+.fa-mug-hot {
+  transform: rotateY(180deg);
 }
 
 /*# sourceMappingURL=output.css.map */
