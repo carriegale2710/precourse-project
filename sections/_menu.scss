@@ -55,6 +55,9 @@ p {
     font-size: 40%;
 }  
 
+
+
+
 .menu {
     &__list {
         /* Flex container should be 900px wide, 300px tall */
@@ -64,6 +67,9 @@ p {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
+        
+
         height: auto;
         background-color: white;
         gap: 2%;
@@ -74,6 +80,7 @@ p {
             // @include mixins.section-style;
             display: flex;
             flex-direction: column;
+            
             
             width: 32%;
             height: fit-content;
