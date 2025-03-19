@@ -174,13 +174,6 @@ menu h2 {
 menu i {
   color: #689572;
 }
-menu img {
-  height: 100px;
-  width: auto;
-}
-menu p {
-  font-size: xxx-small;
-}
 
 details {
   width: 100%;
@@ -192,43 +185,50 @@ summary {
   padding: 1% 2% 1% 2%;
 }
 
+i {
+  scale: 80%;
+}
+
+p {
+  font-size: 40%;
+}
+
 .menu__list {
   /* Flex container should be 900px wide, 300px tall */
-  border: 1px solid red;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  font-size: small;
   justify-self: center; /*Flex container should be centered on the page */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   height: auto;
   background-color: white;
+  gap: 2%;
 }
 .menu__list__item {
   /* Use percentages for the height and width of the card */
-  border: 1px solid red;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  font-size: small;
-  display: flex;
-  flex-direction: column;
-  width: 33.333%;
+  width: 32%;
+  height: auto;
+  margin-top: 2%;
   align-items: center;
   justify-content: center;
+  padding: 1%;
+  background-color: #EBC9C4;
+}
+.menu__list__item img {
+  height: fit-content;
+  width: 170px;
+  object-fit: cover;
+  margin-top: 3px;
 }
 .menu__list__item__dietary {
   display: flex;
   flex-direction: row;
   width: 100%;
+  gap: 1%;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
 }
 
 footer {
