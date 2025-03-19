@@ -37,7 +37,7 @@
 }
 
 header {
-  border: 1px solid red;
+  border: 5px solid red;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -74,7 +74,7 @@ header #header-right img {
 }
 
 .review-section {
-  border: 1px solid red;
+  border: 5px solid red;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -96,7 +96,7 @@ header #header-right img {
 }
 
 nav {
-  border: 1px solid red;
+  border: 5px solid red;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -106,7 +106,7 @@ nav {
   font-size: small;
   flex-direction: row;
   justify-content: space-between;
-  padding: 8px 12% 8px 8%;
+  padding: 8px 8% 8px 8%;
 }
 
 .div-left {
@@ -146,8 +146,12 @@ button {
   padding: 5px 10px 5px 10px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 menu {
-  border: 1px solid red;
+  border: 5px solid red;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -163,8 +167,58 @@ menu {
 menu h1 {
   color: #FAA196;
 }
+menu h2 {
+  color: #404040;
+  font-size: x-small;
+}
 menu i {
   color: #689572;
+}
+menu img {
+  height: 100px;
+  width: auto;
+}
+menu p {
+  font-size: xxx-small;
+}
+menu__list {
+  /* Flex container should be 900px wide, 300px tall */
+  border: 5px solid red;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-size: small;
+  justify-self: center; /*Flex container should be centered on the page */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+}
+menu__list__item {
+  /* Use percentages for the height and width of the card */
+  border: 5px solid red;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  width: 33.333%;
+  align-items: center;
+  justify-content: center;
+}
+menu__list__item__dietary {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 30%;
+  justify-self: center;
 }
 
 details {
@@ -174,7 +228,7 @@ details {
 }
 
 footer {
-  border: 1px solid red;
+  border: 5px solid red;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;

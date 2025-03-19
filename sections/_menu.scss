@@ -2,7 +2,9 @@
 @use '../partials/colors';
 @use '../partials/fonts';
 
-
+*{
+    box-sizing: border-box;
+}
 
 ///////////////////////////// 3. MENU-SECTION /////////////////////////////////
 
@@ -12,14 +14,64 @@ menu{
     flex-direction: column;
     height: auto;
     gap: 10px;
+
     h1{
         color: colors.$bubble-pink;
+    }
+
+    h2 {
+        color: colors.$dark-choc;
+        font-size: x-small;
     }
     
     i{
         color: colors.$leaf-green;
     }
+
+    img{
+        height: 100px;
+        width: auto;
+    }
     
+    p {
+        font-size: xxx-small;
+    }
+    
+    
+    &__list {
+        /* Flex container should be 900px wide, 300px tall */
+        @include mixins.section-style;
+        justify-self: center; /*Flex container should be centered on the page */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+
+        &__item {
+            /* Use percentages for the height and width of the card */
+            // height: 100%;
+            @include mixins.section-style;
+            display: flex;
+            flex-direction: column;
+            width: 33.333%;
+            align-items: center;
+            justify-content: center;
+            
+
+            &__dietary {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                padding: 30%;
+                justify-self: center;
+
+            }
+           
+        }
+    }
+
+    
+
 }
 
 
@@ -29,3 +81,4 @@ details{
     padding: 2vw;
     
 }
+
