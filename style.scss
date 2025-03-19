@@ -10,16 +10,20 @@
 
 
 //partials:
-@use 'partials/colors';
-// @use 'fonts'; MISTAKE, need to include the folder name
-@use 'partials/fonts';
-@use 'partials/icons';
-@use 'partials/mixins';
+// note: @import is an OUTDATED way to do this, don't do it as its global
+// make sure to include the folder path/file
+@use './partials/colors';
+@use './partials/fonts';
+@use './partials/icons';
+@use './partials/mixins';
 
-// this is an OUTDATED way to do this, don't do it as its global
-// @import "./colors";
-// @import "./fonts";
-// @import "./icons";
+//sections to import:
+@use './sections/header';
+@use './sections/reviews';
+@use './sections/navbar';
+@use './sections/menu';
+@use './sections/footer';
+
 
 html {
     scroll-behavior: smooth;
@@ -36,130 +40,7 @@ body{
 i {
     padding: 0px;
 }
-///////////////////////////// 1. NAVBAR-SECTION /////////////////////////////////
 
 
-nav {
-    @include mixins.section-style;
-    flex-direction: row;
-    justify-content:space-between;
-    padding: 8px 12% 8px 8%;
-    
-}
-
-.div-left {
-   border: 1px solid blue;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   i{
-    transform: rotateY(180deg);
-   }
-}
-
-.div-right {
-    border: 1px solid green;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
 
 
-a {
-    text-decoration: none;
-    color: colors.$dark-choc;
-    font-size:x-small;
-    
-}
-
-h2 {
-    color: white;
-    font-size: small;
-}
-
-p{
-    font-size: x-small;
-}
-
-button{
-    color: white;
-    background-color: colors.$leaf-green;
-    border: 2px solid white;
-    padding: 5px 10px 5px 10px;
-}
-
-///////////////////////////// 2. HEADER-SECTION /////////////////////////////////
-
-header {
-    @include mixins.section-style;
-    flex-direction: row;
-    background-color: colors.$leaf-green;
-    height: 350px;
-    
-    #header-left{
-        width: 50vw;
-        height:fit-content;
-        border: 1px solid blue;
-        padding: 0 8% 0 8%;
-        box-sizing: border-box; // this keeps it so  Padding will not increase the width
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        color: white;
-    }
-    #header-right {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box; // this keeps it so  Padding will not increase the width
-        width: 50vw;
-        height: 100%;
-        // border: 1px solid blue;
-        img{
-            height:100%;
-            width: 100%;
-            object-fit: cover;
-        }
-    }
-}
-
-///////////////////////////// 3. MENU-SECTION /////////////////////////////////
-
-menu{
-    @include mixins.section-style;
-    padding: 5%;
-    flex-direction: column;
-    height: 500px;
-    h1{
-        color: colors.$bubble-pink;
-    }
-    
-}
-
-
-///////////////////////////// 4. REVIEW-SECTION /////////////////////////////////
-
-#reviews {
-    @include mixins.section-style;
-    background-color: colors.$bubble-pink;
-    padding: 5%;
-    color: white;
-    height: 500px;
-
-}
-
-///////////////////////////// 5. FOOTER-SECTION /////////////////////////////////
-
-footer {
-    @include mixins.section-style;
-    background-color: colors.$pale-green;
-    flex-direction: row;
-    width: 100;
-    gap: 10px;
-    padding: 10px 12% 10px 5%;
-    justify-content:space-between;
-    i {
-        transform: rotateY(180deg);
-    }
-    
-} 

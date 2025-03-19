@@ -1,0 +1,19 @@
+@use '../partials/mixins';
+@use '../partials/colors';
+
+
+///////////////////////////// 5. FOOTER-SECTION /////////////////////////////////
+
+footer {
+    @include mixins.section-style;
+    background-color: colors.$pale-green;
+    flex-direction: row;
+    width: 100;
+    gap: 10px;
+    padding: 10px 12% 10px 5%;
+    justify-content:space-between;
+    i {
+        transform: rotateY(180deg);
+    }
+    
+} 

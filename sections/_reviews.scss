@@ -1,0 +1,19 @@
+@use '../partials/mixins';
+@use '../partials/colors';
+
+///////////////////////////// 4. REVIEW-SECTION /////////////////////////////////
+
+.review-section {
+    @include mixins.section-style;
+    background-color: colors.$bubble-pink;
+    padding: 5%;
+    color: white;
+    height: 500px;
+    font-size: large;
+    &__reviewCard{
+        border: 2px solid white;
+        height: 100px;
+        width: 300px;
+        color: colors.$dark-choc;
+    }
+}

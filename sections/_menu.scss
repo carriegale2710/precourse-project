@@ -1,0 +1,21 @@
+@use '../partials/mixins';
+@use '../partials/colors';
+
+
+///////////////////////////// 3. MENU-SECTION /////////////////////////////////
+
+menu{
+    @include mixins.section-style;
+    padding: 5%;
+    flex-direction: column;
+    height: 500px;
+    h1{
+        color: colors.$bubble-pink;
+    }
+    
+    i{
+        color: colors.$leaf-green;
+    }
+    
+}
+
