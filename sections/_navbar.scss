@@ -9,47 +9,28 @@ nav {
     flex-direction: row;
     justify-content:space-between;
     padding: 8px 12% 8px 8%;
+
     
+    
+    a {
+        text-decoration: none;
+        color: colors.$dark-choc;
+        font-size:x-small;
+        
+    }
 }
+
+
 
 .div-left {
-//    border: 1px solid blue;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   i{
-    transform: rotateY(180deg);
-   }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-
+    
 .div-right {
-    // border: 1px solid green;
     display: flex;
     flex-direction: row;
     gap: 30px;
-}
-
-
-a {
-    text-decoration: none;
-    color: colors.$dark-choc;
-    font-size:x-small;
-    
-}
-
-h2 {
-    color: white;
-    font-size: small;
-}
-
-p{
-    font-size: x-small;
-}
-
-button{
-    color: white;
-    background-color: colors.$leaf-green;
-    border: 2px solid white;
-    padding: 5px 10px 5px 10px;
 }
 

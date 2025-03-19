@@ -1,6 +1,14 @@
 
-#logo {
-    height: 50px;
-    width: 50px;
+@use './colors';
+
+.fa-mug-hot {
+   color: colors.$bubble-pink;
+   transform: rotateY(180deg);
+   scale:calc(150%);
+   padding: 8px;
 }
 
+.fa-instagram {
+    scale:calc(150%);
+    padding: 8px;
+}

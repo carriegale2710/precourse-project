@@ -33,9 +33,16 @@
   text-align: center;
 }
 
-#logo {
-  height: 50px;
-  width: 50px;
+.fa-mug-hot {
+  color: #FAA196;
+  transform: rotateY(180deg);
+  scale: 150%;
+  padding: 8px;
+}
+
+.fa-instagram {
+  scale: 150%;
+  padding: 8px;
 }
 
 header {
@@ -73,6 +80,22 @@ header #header-right img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+h2 {
+  color: white;
+  font-size: small;
+}
+
+p {
+  font-size: x-small;
+}
+
+button {
+  color: white;
+  background-color: #689572;
+  border: 2px solid white;
+  padding: 5px 10px 5px 10px;
 }
 
 .review-section {
@@ -130,42 +153,22 @@ nav {
   justify-content: space-between;
   padding: 8px 12% 8px 8%;
 }
+nav a {
+  text-decoration: none;
+  color: #404040;
+  font-size: x-small;
+}
 
 .div-left {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.div-left i {
-  transform: rotateY(180deg);
-}
 
 .div-right {
   display: flex;
   flex-direction: row;
   gap: 30px;
-}
-
-a {
-  text-decoration: none;
-  color: #404040;
-  font-size: x-small;
-}
-
-h2 {
-  color: white;
-  font-size: small;
-}
-
-p {
-  font-size: x-small;
-}
-
-button {
-  color: white;
-  background-color: #689572;
-  border: 2px solid white;
-  padding: 5px 10px 5px 10px;
 }
 
 menu {
@@ -203,6 +206,7 @@ footer {
   gap: 10px;
   padding: 10px 12% 10px 5%;
   justify-content: space-between;
+  align-items: center;
 }
 footer i {
   transform: rotateY(180deg);
