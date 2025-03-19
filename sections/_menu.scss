@@ -73,25 +73,27 @@ p {
             // @include mixins.section-style;
             display: flex;
             flex-direction: column;
+            
             width: 32%;
-            height: auto;
+            height: fit-content;
             margin-top: 2%;
             align-items: center;
             justify-content: center;
+            
             padding: 1%;
             background-color: colors.$dusty-rose;
 
             img{
                 height: fit-content;
-                width: 170px;
+                width: 100%;
                 object-fit: cover;
-                margin-top: 3px;
+                margin: 3px;
             }
 
             &__dietary {
                 display: flex;
                 flex-direction: row;
-                width: 100%;
+                
                 gap: 1%;
                 align-items: center;
                 justify-content: center;

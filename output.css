@@ -208,7 +208,7 @@ p {
   display: flex;
   flex-direction: column;
   width: 32%;
-  height: auto;
+  height: fit-content;
   margin-top: 2%;
   align-items: center;
   justify-content: center;
@@ -217,14 +217,13 @@ p {
 }
 .menu__list__item img {
   height: fit-content;
-  width: 170px;
+  width: 100%;
   object-fit: cover;
-  margin-top: 3px;
+  margin: 3px;
 }
 .menu__list__item__dietary {
   display: flex;
   flex-direction: row;
-  width: 100%;
   gap: 1%;
   align-items: center;
   justify-content: center;
