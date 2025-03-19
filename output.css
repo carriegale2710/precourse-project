@@ -1,24 +1,3 @@
-.open-sans__regular {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-.open-sans__bold {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-.open-sans__bold-italic {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: italic;
-  font-variation-settings: "wdth" 100;
-}
-
 #logo {
   height: 50px;
   width: 50px;
@@ -31,25 +10,51 @@ h1 {
   color: white;
 }
 
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
 nav {
   border: 1px solid red;
+  padding-left: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: last baseline;
 }
+nav a {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  padding: 30px;
+}
+nav a__regular {
+  font-weight: 300;
+}
+nav a__bold {
+  font-weight: 500;
+}
+nav a__bold-italic {
+  font-weight: 500;
+  font-style: italic;
+}
+
 header {
+  border: 1px solid red;
   background-color: #689572;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
 menu {
   border: 1px solid red;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -64,7 +69,7 @@ menu h1 {
   border: 1px solid red;
   background-color: #FAA196;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }

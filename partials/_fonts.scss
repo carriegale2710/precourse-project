@@ -18,31 +18,23 @@
   color: $color;
 }
 
-.open-sans { 
-    &__regular {
-      font-family: "Open Sans", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 300; // <weight>: Use a value from 300 to 800
-      font-style: normal;
-      font-variation-settings:
+@mixin open-sans { 
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
       "wdth" 100;
-    }
-    &__bold {
-      font-family: "Open Sans", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 500; // <weight>: Use a value from 300 to 800
-      font-style: normal;
-      font-variation-settings:
-      "wdth" 100;
-        
-    }
-    &__bold-italic {
-      font-family: "Open Sans", sans-serif;
-      font-optical-sizing: auto;
-      // font-weight: <weight>; // <weight>: Use a value from 300 to 800
-      font-style: italic;
-      font-variation-settings:
-      "wdth" 100;
-    }
+  padding: 30px;
+  &__regular {
+    font-weight: 300; // <weight>: Use a value from 300 to 800
+  }
+    
+  &__bold {
+    font-weight: 500; // <weight>: Use a value from 300 to 800
+  }
+  &__bold-italic {
+    font-weight: 500; // font-weight: <weight>; // <weight>: Use a value from 300 to 800
+    font-style: italic;
+  }
 }
 
