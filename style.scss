@@ -22,19 +22,6 @@
 // @import "./icons";
 
 
-h1 {
-    // color: colors.$leaf-green;
-    
-}
-
-.content-wrapper {
-    @include mixins.section-style;
-    flex-direction: row;
-    border: 1px dashed blue;
-    width: 80vw;
-    height:fit-content;
-}
-
 
 ///////////////////////////// 1. NAVBAR-SECTION /////////////////////////////////
 
@@ -42,10 +29,8 @@ h1 {
 nav {
     @include mixins.section-style;
     flex-direction: row;
-    padding-left: 50px;
-    a {
-        @include fonts.open-sans;
-    }
+    justify-content: left;
+    margin: 10px 5% 10px 5%;
 }
 
 ///////////////////////////// 2. HEADER-SECTION /////////////////////////////////
@@ -54,14 +39,35 @@ header {
     @include mixins.section-style;
     flex-direction: row;
     background-color: colors.$leaf-green;
-    
+    height: 50vh;
+    #header-left{
+        width: 50%;
+        height: auto;
+        border: 1px solid blue;
+        padding: 5%;
+        // text-wrap: wrap;
+    }
+    #header-right {
+        width: 50%;
+        height: auto;
+        // border: 1px solid blue;
+        img{
+            height:50vh;
+            width: 50vw;
+        }
+    }
 }
 
 ///////////////////////////// 3. MENU-SECTION /////////////////////////////////
 
 menu{
     @include mixins.section-style;
-    h1{@include fonts.rammetto-one-regular(colors.$bubble-pink)};
+    margin: 5%;
+    flex-direction: column;
+    h1{
+        color: colors.$bubble-pink;
+    }
+    
 }
 
 
@@ -78,9 +84,15 @@ footer {
     @include mixins.section-style;
     background-color: colors.$pale-green;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100;
     gap: 10px;
-    :last-child {
-        justify-self: right;
-    }
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: left;
+    // &:last-child {
+    //     justify-self: right;
+    // }
+    
+    
 } 

@@ -1,16 +1,19 @@
 // put reuseable code here
 
-@mixin section-style {
+@mixin section-style ($flex-direction:column) {
     border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
-@mixin openSans {
+@mixin openSans($bold:bold, $font-style:normal) {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
+    font-weight: $bold;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
