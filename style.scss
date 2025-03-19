@@ -21,7 +21,9 @@
 // @import "./fonts";
 // @import "./icons";
 
-
+body{
+    margin: 0;
+}
 
 ///////////////////////////// 1. NAVBAR-SECTION /////////////////////////////////
 
@@ -30,7 +32,7 @@ nav {
     @include mixins.section-style;
     flex-direction: row;
     justify-content: left;
-    margin: 10px 5% 10px 5%;
+    padding: 10px 5% 10px 5%;
 }
 
 ///////////////////////////// 2. HEADER-SECTION /////////////////////////////////
@@ -62,7 +64,7 @@ header {
 
 menu{
     @include mixins.section-style;
-    margin: 5%;
+    padding: 5%;
     flex-direction: column;
     h1{
         color: colors.$bubble-pink;
@@ -76,6 +78,7 @@ menu{
 .reviews {
     @include mixins.section-style;
     background-color: colors.$bubble-pink;
+    padding: 5%;
 }
 
 ///////////////////////////// 5. FOOTER-SECTION /////////////////////////////////
