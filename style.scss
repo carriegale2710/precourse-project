@@ -9,12 +9,6 @@
 // o The layout should be created using flexbox 
 
 
-<<<<<<< HEAD
-//design system:
-@use "partials/colors";
-@use "partials/fonts";
-@use "partials/icons";
-=======
 //partials:
 @use 'partials/colors';
 // @use 'fonts'; MISTAKE, need to include the folder name
@@ -32,40 +26,52 @@ h1 {
     @include fonts.rammetto-one-regular(white);
 }
 
->>>>>>> no-overwhelm
 
 
 ///////////////////////////// 1. NAVBAR-SECTION /////////////////////////////////
 
-<<<<<<< HEAD
-.fa-mug-hot{
-    transform: rotateY(180deg); // flips coffee mug icon from right to left
-=======
 nav {
     border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     a {
         
     }
->>>>>>> no-overwhelm
 }
 
 ///////////////////////////// 2. HEADER-SECTION /////////////////////////////////
 
 header {
     background-color: colors.$leaf-green;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 ///////////////////////////// 3. MENU-SECTION /////////////////////////////////
 
 menu{
+    border: 1px solid red;
     h1{@include fonts.rammetto-one-regular(colors.$bubble-pink)}
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 
 ///////////////////////////// 4. REVIEW-SECTION /////////////////////////////////
 
 .reviews {
+    border: 1px solid red;
     background-color: colors.$bubble-pink;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 ///////////////////////////// 5. FOOTER-SECTION /////////////////////////////////
@@ -75,6 +81,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     width: 100;
     gap: 10px;
     :last-child {
