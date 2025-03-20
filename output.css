@@ -55,12 +55,12 @@ header {
   font-size: small;
   flex-direction: row;
   background-color: #689572;
-  height: 350px;
+  height: auto;
 }
 header #header-left {
   width: 50vw;
   height: fit-content;
-  padding: 0 8% 0 8%;
+  padding: 5% 8% 5% 8%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -78,7 +78,7 @@ header #header-right {
 header #header-right img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 h2 {

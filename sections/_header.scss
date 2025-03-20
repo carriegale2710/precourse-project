@@ -8,13 +8,13 @@ header {
     @include mixins.section-style;
     flex-direction: row;
     background-color: colors.$leaf-green;
-    height: 350px;
+    height: auto;
     
     #header-left{
         width: 50vw;
         height:fit-content;
         // border: 1px solid blue;
-        padding: 0 8% 0 8%;
+        padding: 5% 8% 5% 8%;
         box-sizing: border-box; // this keeps it so  Padding will not increase the width
         display: flex;
         flex-direction: column;
@@ -32,7 +32,7 @@ header {
         img{
             height:100%;
             width: 100%;
-            object-fit: cover;
+            object-fit: fill;
         }
     }
 }
