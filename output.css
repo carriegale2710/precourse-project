@@ -149,6 +149,10 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   padding: 10px 5% 10px 5%;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: white;
 }
 nav a {
   text-decoration: none;
