@@ -4,24 +4,70 @@
 @use '../partials/mixins';
 
 
-form {
- background-color: pink;
+h1{
+    padding-bottom: 5vh;
+    color: colors.$bubble-pink;
 }
 
-// input{ 
+form {
 
-// }
-
-// label{
-
-// }
-
-
-
-// textarea {
-
-// }
-
-// .contact-query {
+   
+    background-color: colors.$pale-green;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items:start;
+    padding: 20vw;
+    height: 100%;
     
-// }
+
+ 
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 2%;
+
+}
+
+
+input{ 
+    border-radius: 8px;
+    border-style: none;
+    height: 30px;
+    width: 50%;
+}
+
+label {
+    color: white;
+    
+    height: 20px;
+    width: 100px;
+    margin: 2%;
+}
+
+select {
+    border-radius: 8px;
+    height: 30px;
+    width: 30vw;
+    
+}
+
+textarea {
+    border-radius: 8px;
+    height: 30vh;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button {
+    border-radius: 8px;
+    align-self: center;
+    margin: 10%;
+    scale: 150%;
+}
+

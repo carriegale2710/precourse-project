@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="./contact-page.scss">
-    <link rel="stylesheet" href="../style.scss">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="../output.css">
     <script src="https://kit.fontawesome.com/2f1970a1ee.js" crossorigin="anonymous"></script>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rammetto+One&display=swap');
@@ -15,25 +15,28 @@
     <nav>
         <!-- Nav bar with a logo and two links, for now they don't have to work -->
         <div class="div-left">
-            <a href="./cafe.html">
+            <a href="../cafe.html">
                 <i class="fa-solid fa-mug-hot"></i>
             </a>
         </div>
         <div class="div-right">
-            <a href="./cafe.html" class="open-sans__bold">ABOUT</a>
+            <a href="../cafe.html" class="open-sans__bold">ABOUT</a>
             <a href="./contact.html" class="open-sans__bold">CONTACT</a>
         </div>
     </nav>
-    <form action="">
+    
+    <form action="" >
+        <h1 class="rammetto-one-regular">Contact Form</h1>
         <div class="input-wrapper">
-            <label for="firstNameInput">First Name</label>
+            <label for="firstNameInput" class="open-sans__bold">First Name</label>
             <input type="text" name="firstNameInput" required/>
         </div>
         <div class="input-wrapper">
-            <label for="emailInput">Email</label>
+            <label for="emailInput" class="open-sans__bold">Email</label>
             <input type="email" name="emailInput" required/>
         </div>
         <div class="input-wrapper">
+            <label for="selectInput" class="open-sans__bold">Type of Query</label>
             <select name="selectInput" id="contact-query" required>
                 <option value="placeholder">Please select a topic...</option>
                 <option value="bookings">Bookings</option>
