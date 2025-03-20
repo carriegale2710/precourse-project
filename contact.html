@@ -23,6 +23,28 @@
             <a href="./contact.html" class="open-sans__bold">CONTACT</a>
         </div>
     </nav>
+    <form action="">
+        <div class="input-wrapper">
+            <label for="firstNameInput">First Name</label>
+            <input type="text" name="firstNameInput" required/>
+        </div>
+        <div class="input-wrapper">
+            <label for="emailInput">Email</label>
+            <input type="email" name="emailInput" required/>
+        </div>
+        <div class="input-wrapper">
+            <select name="selectInput" id="contact-query" required>
+                <option value="placeholder">Please select a topic...</option>
+                <option value="bookings">Bookings</option>
+                <option value="orders">Online Orders</option>
+                <option value="complaints">Complaints</option>
+            </select>
+        </div>
+        <div class="input-wrapper">
+            <textarea name="messageInput" id="message" placeholder="Write message here" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
 
