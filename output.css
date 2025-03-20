@@ -106,10 +106,10 @@ button {
   margin: 0;
   font-size: small;
   background-color: #FAA196;
-  padding: 2% 5% 2% 5%;
+  padding: 5%;
   color: white;
   height: auto;
-  font-size: large;
+  font-size: lar ge;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -117,6 +117,7 @@ button {
 .review-section h1 {
   height: 50px;
   width: 85vw;
+  margin-bottom: 2%;
   text-align: center;
 }
 .review-section__reviewCard {
@@ -124,11 +125,11 @@ button {
   flex-direction: column;
   justify-content: space-between;
   border: 2px solid white;
-  height: 110px;
+  height: auto;
   width: 40vw;
   color: #404040;
   padding: 2%;
-  margin: 5px;
+  margin: 2%;
   gap: 2%;
 }
 .review-section__reviewCard__wrapper {
@@ -172,10 +173,6 @@ nav a {
   gap: 30px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 menu {
   box-sizing: border-box;
   display: flex;
@@ -186,7 +183,6 @@ menu {
   font-size: small;
   padding: 5%;
   flex-direction: column;
-  height: 500px;
   height: auto;
 }
 menu h1 {
@@ -220,8 +216,7 @@ p {
 }
 
 .menu__list {
-  /* Flex container should be 900px wide, 300px tall */
-  justify-self: center; /*Flex container should be centered on the page */
+  justify-self: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

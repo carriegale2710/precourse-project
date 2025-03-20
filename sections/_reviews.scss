@@ -10,14 +10,17 @@
     h1{
         height: 50px;
         width: 85vw;
+        margin-bottom: 2%;
         text-align: center
     }
     @include mixins.section-style;
     background-color: colors.$bubble-pink;
-    padding: 2% 5% 2% 5%;
+    padding: 5%;
+    
     color: white;
     height: auto;
-    font-size: large;
+    font-size: lar
+    ge;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:center;
@@ -27,11 +30,11 @@
         flex-direction: column;
         justify-content: space-between;
         border: 2px solid white;
-        height: 110px;
+        height: auto;
         width: 40vw;
         color: colors.$dark-choc;
         padding: 2%;
-        margin: 5px;
+        margin: 2%;
         gap: 2%;
         &__wrapper{
             display: flex;
