@@ -2,9 +2,6 @@
 @use '../partials/colors';
 @use '../partials/fonts';
 
-*{
-    box-sizing: border-box;
-}
 
 ///////////////////////////// 3. MENU-SECTION /////////////////////////////////
 
@@ -12,11 +9,8 @@ menu{
     @include mixins.section-style;
     padding: 5%;
     flex-direction: column;
-    height: 500px;
-    
     height: auto;
     
-
     h1{
         color: colors.$bubble-pink;
     }
@@ -28,11 +22,7 @@ menu{
     
     i{
         color: colors.$leaf-green;
-    }
-
-    
-    
-//     
+    }    
 }
 
 
@@ -40,7 +30,6 @@ details{
     width: 100%;
     padding: 1vw;
     margin: 0px;
-    
 }
 
 summary{
@@ -56,20 +45,14 @@ p {
 }  
 
 
-
-
 .menu {
     &__list {
-        /* Flex container should be 900px wide, 300px tall */
         // @include mixins.section-style;
-        
-        justify-self: center; /*Flex container should be centered on the page */
+        justify-self: center; 
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        
-
         height: auto;
         background-color: white;
         gap: 2%;
@@ -80,14 +63,11 @@ p {
             // @include mixins.section-style;
             display: flex;
             flex-direction: column;
-            
-            
             width: 32%;
             height: fit-content;
             margin-top: 2%;
             align-items: center;
             justify-content: center;
-            
             padding: 1%;
             background-color: colors.$dusty-rose;
 
@@ -101,7 +81,6 @@ p {
             &__dietary {
                 display: flex;
                 flex-direction: row;
-                
                 gap: 1%;
                 align-items: center;
                 justify-content: center;

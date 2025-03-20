@@ -10,8 +10,6 @@ h1{
 }
 
 form {
-
-   
     background-color: colors.$pale-green;
     display: flex;
     flex-direction: column;
@@ -19,9 +17,6 @@ form {
     align-items:start;
     padding: 20vw;
     height: 100%;
-    
-
- 
 }
 
 .input-wrapper {
@@ -31,7 +26,6 @@ form {
     width: 100%;
     align-items: center;
     margin: 2%;
-
 }
 
 
@@ -44,7 +38,6 @@ input{
 
 label {
     color: white;
-    
     height: 20px;
     width: 100px;
     margin: 2%;
@@ -54,7 +47,6 @@ select {
     border-radius: 8px;
     height: 30px;
     width: 30vw;
-    
 }
 
 textarea {
